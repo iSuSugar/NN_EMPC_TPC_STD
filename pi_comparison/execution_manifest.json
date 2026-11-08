@@ -1,0 +1,16 @@
+{
+  "date": "2026-11-08",
+  "baselineGitCommit": "43b020066ab2b4a03f647254534af366abcd2a74",
+  "cases": 9,
+  "freshSwitchingSimulations": 18,
+  "eventRows": 36,
+  "WordPages": 8,
+  "figures": 9,
+  "nativeWordEquations": 4,
+  "originalProtectedFilesUnchanged": 43,
+  "originalClosedCircuitsUnchanged": 9,
+  "neuralTrainingRuns": 0,
+  "hardwareRuns": 0,
+  "fairnessChecks": "physical parameters, electrical nodes, solver, sampling, limits, time grids, embedded 16-8 weights and PI frozen parameters",
+  "visualQA": "All eight Word pages rendered with Microsoft Word and inspected. Packaged renderer required unavailable LibreOffice, so native Word plus PDFium was used."
+}

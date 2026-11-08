@@ -43,3 +43,8 @@ vivado.jou
 *.aux
 *.synctex.gz
 **/双栏LaTeX_V0.2/*.log
+/pi_comparison/*.log
+/pi_comparison/TASK*.m
+/pi_comparison/STOP_WORKER
+/pi_comparison/pi_worker.m
+/pi_comparison/cache/

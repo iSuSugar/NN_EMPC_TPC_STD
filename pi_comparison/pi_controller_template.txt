@@ -1,0 +1,19 @@
+function u=control(features,t)
+%#codegen
+@PARAMETERS@
+persistent zi zv
+if isempty(zi),zi=0;zv=0;end
+if t<warm
+ zi=0;zv=0;u=ub;return
+end
+ev=features(4)-features(2);
+ir0=ib+kpV*ev+zv;
+ir=min(max(ir0,imin),imax);
+ei=ir-features(1);
+q=kpI*ei+zi;
+u=min(max(ub+dir*q,lo),hi);
+qa=dir'*(u-ub);
+zi=zi+kiI*Ts*ei+0.2*(qa-q);
+blocked=(ir0>imax&&ev>0)||(ir0<imin&&ev<0)||(qa<q-1e-12&&ev>0)||(qa>q+1e-12&&ev<0);
+if ~blocked,zv=zv+kiV*Ts*ev;end
+end

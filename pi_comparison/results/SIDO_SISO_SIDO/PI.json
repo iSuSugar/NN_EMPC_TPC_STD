@@ -1,0 +1,61 @@
+{
+  "finalMeanV": 119.95723482375891,
+  "finalErrorPct": 0.035637646867570094,
+  "feedbackPeakCurrentA": 17.426263589841636,
+  "feedbackMinimumV": 117.26989827502717,
+  "feedbackMaximumV": 120.43665903639042,
+  "recoveryBandV": 0.1,
+  "plateaus": [
+    {
+      "window": [
+        0.049,
+        0.05
+      ],
+      "meanV": 119.95723482329537,
+      "errorPct": 0.035637647253861093,
+      "meanCurrentA": 10.231801713783108
+    },
+    {
+      "window": [
+        0.069,
+        0.07
+      ],
+      "meanV": 119.95774147854866,
+      "errorPct": 0.035215434542790192,
+      "meanCurrentA": 9.83867166586958
+    },
+    {
+      "window": [
+        0.079000000000000015,
+        0.080000000000000016
+      ],
+      "meanV": 119.95723482369634,
+      "errorPct": 0.03563764691971727,
+      "meanCurrentA": 10.231801719373227
+    }
+  ],
+  "maximumPlateauErrorPct": 0.035637647253861093,
+  "events": [
+    {
+      "time": 0.05,
+      "preMeanV": 119.95723482349034,
+      "postMeanV": 119.95782506127463,
+      "peakDepartureV": 0.13217491062097508,
+      "recoveryUs": 425.00000000000176,
+      "IAE_Vs": 0.00018951722088598915
+    },
+    {
+      "time": 0.07,
+      "preMeanV": 119.95774148472071,
+      "postMeanV": 119.95723016827023,
+      "peakDepartureV": 0.018274329689987212,
+      "recoveryUs": 0,
+      "IAE_Vs": 0.00012788000741285275
+    }
+  ],
+  "controller": "PI",
+  "id": "SIDO_SISO_SIDO",
+  "elapsedSeconds": 101.1271771,
+  "initializationSeconds": 0.25,
+  "initializationPeakA": 78.025919318221042
+}

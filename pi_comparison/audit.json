@@ -1,0 +1,1644 @@
+[
+  {
+    "id": "SISO_VS_VB",
+    "cfg": {
+      "id": "SISO_VS_VB",
+      "Vs": 48,
+      "Vb": 72,
+      "Vref": 72,
+      "refs": 72,
+      "Rloads": [
+        20,
+        40
+      ],
+      "L": 0.00011,
+      "Co": 0.00022,
+      "fsw": 100000,
+      "Ts": 1E-5,
+      "N": 30,
+      "blockTo": 1,
+      "Qx": 3,
+      "QxByRload": [
+        3,
+        0.03
+      ],
+      "Qy": 3000,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "voltageMin": -0.01,
+      "dutyMax": 0.94,
+      "hiddenSizes": [
+        16,
+        8
+      ],
+      "groupLoadFamilies": true,
+      "nnVoltageDomain": [
+        67,
+        77
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ],
+      "nominalDuty": 0.35,
+      "calibrateRange": [
+        0,
+        0.7
+      ],
+      "warmupTime": 0.25,
+      "segmentTime": 0.01,
+      "openMaxStep": 5E-7,
+      "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+      "events": [
+        0.03,
+        0.04
+      ],
+      "source": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72\\circuit\\template\\SISO_VS48_VB72.slx",
+      "activePwm": [
+        "PWM Generator\n(DC-DC)1"
+      ],
+      "voltageSensor": "Voltage Measurement1",
+      "currentSensor": "Current Measurement3",
+      "nu": 1,
+      "feedbackTiming": "sample_hold",
+      "paperFigure": 4,
+      "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+      "codeRel": "EMPC_LOOP/SU_SISO_VS48_VB72/code",
+      "caseRel": "EMPC_LOOP/SU_SISO_VS48_VB72",
+      "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72\\code",
+      "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72"
+    },
+    "initialization": {
+      "Co": 0.00022,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "Qx": 3,
+      "QxByRload": [
+        3,
+        0.03
+      ],
+      "N": 30,
+      "blockTo": 1,
+      "warmupDuty": 0.3508,
+      "startupRamp": 0.04,
+      "warmup": 0.06,
+      "modelFile": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72\\code\\models\\identified_model.mat",
+      "tag": "C220_weightByLoad",
+      "controllerDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72\\code",
+      "nnVoltageDomain": [
+        67,
+        77
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ]
+    },
+    "models": [
+      {
+        "Rload": 20,
+        "A": [
+          [
+            0.98877523998006611,
+            -0.038932115961967217
+          ],
+          [
+            0.019781833415245108,
+            0.99513391682891139
+          ]
+        ],
+        "B": [
+          6.6779877397495895,
+          -0.14695952027712333
+        ],
+        "f": [
+          0.460458288428788,
+          0.29935956369835953
+        ],
+        "anchor": {
+          "x": [
+            5.1701001238369173,
+            71.728242565313991
+          ],
+          "u": 0.35790827943790937,
+          "Rload": 20
+        }
+      },
+      {
+        "Rload": 40,
+        "A": [
+          [
+            0.98695757434190934,
+            -0.042205599034584589
+          ],
+          [
+            0.019931893549976685,
+            0.995624589418527
+          ]
+        ],
+        "B": [
+          6.5397249715882841,
+          -0.029338159621003571
+        ],
+        "f": [
+          0.77837572281017,
+          0.27913397331077311
+        ],
+        "anchor": {
+          "x": [
+            2.3878509748268439,
+            72.3107469148784
+          ],
+          "u": 0.35241329661491227,
+          "Rload": 40
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "name": "TPC_Controller",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Logging",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Off_10",
+        "type": "Constant"
+      },
+      {
+        "name": "TPC_Receive_001_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_001_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_003",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_007_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_008_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_009_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_010_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Send_001",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_002",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_003",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_004",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_005",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_006",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_007",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_008",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_009",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_010",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Unused_1",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_11",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_12",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_13",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_2",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_3",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_4",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_5",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_6",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_7",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_8",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_9",
+        "type": "Terminator"
+      }
+    ],
+    "stopTime": "0.11"
+  },
+  {
+    "id": "SISO_VS_VO",
+    "cfg": {
+      "id": "SISO_VS_VO",
+      "Vs": 48,
+      "Vb": 72,
+      "Vref": 120,
+      "refs": 120,
+      "Rloads": [
+        48,
+        96
+      ],
+      "L": 0.00011,
+      "Co": 0.00022,
+      "fsw": 100000,
+      "Ts": 1E-5,
+      "N": 30,
+      "blockTo": 1,
+      "Qx": 0.03,
+      "Qy": 3000,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "voltageMin": -0.01,
+      "dutyMax": 0.94,
+      "hiddenSizes": [
+        16,
+        8
+      ],
+      "groupLoadFamilies": true,
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        0,
+        18
+      ],
+      "nominalDuty": 0.725,
+      "calibrateRange": [
+        0.05,
+        0.9
+      ],
+      "warmupTime": 0.25,
+      "segmentTime": 0.01,
+      "openMaxStep": 5E-7,
+      "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+      "events": [
+        0.06,
+        0.07
+      ],
+      "source": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120\\circuit\\template\\SISO_VS48_Vo200.slx",
+      "activePwm": [
+        "PWM Generator\n(DC-DC)1"
+      ],
+      "voltageSensor": "Voltage Measurement",
+      "currentSensor": "Current Measurement3",
+      "nu": 1,
+      "feedbackTiming": "sample_hold",
+      "paperFigure": 5,
+      "implementation": "Candidate only: 220uF, measured-anchor affine model, N30 Qx0.03; first exports are fixed 120V. Startup is separately declared and verified.",
+      "codeRel": "EMPC_LOOP/SU_SISO_VS48_Vo120/code",
+      "caseRel": "EMPC_LOOP/SU_SISO_VS48_Vo120",
+      "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120\\code",
+      "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120"
+    },
+    "initialization": {
+      "Co": 0.00022,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "Qx": 0.03,
+      "N": 30,
+      "blockTo": 1,
+      "warmupDuty": 0.72587,
+      "startupRamp": 0.04,
+      "warmup": 0.06,
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ]
+    },
+    "models": [
+      {
+        "Rload": 48,
+        "A": [
+          [
+            0.98600394867815433,
+            -0.024129948230408576
+          ],
+          [
+            0.012178723494408985,
+            0.99889290445449863
+          ]
+        ],
+        "B": [
+          14.483747863212393,
+          -0.29859783912295029
+        ],
+        "f": [
+          -7.56560667297571,
+          0.25408437735255779
+        ],
+        "anchor": {
+          "x": [
+            7.9304203123829016,
+            119.91167882201349
+          ],
+          "u": 0.72978789362353813,
+          "Rload": 48
+        }
+      },
+      {
+        "Rload": 96,
+        "A": [
+          [
+            0.97825485556639258,
+            -0.026577221600744935
+          ],
+          [
+            0.012383876692837836,
+            0.99934783133861449
+          ]
+        ],
+        "B": [
+          14.169806324566526,
+          -0.087621063998177734
+        ],
+        "f": [
+          -7.0266853956232023,
+          0.1019376029175835
+        ],
+        "anchor": {
+          "x": [
+            3.2138493976507272,
+            119.84482940351526
+          ],
+          "u": 0.72560720790502464,
+          "Rload": 96
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "name": "TPC_Controller",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Logging",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Off_9",
+        "type": "Constant"
+      },
+      {
+        "name": "TPC_Receive_001_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_001_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_007_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_008_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_009_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Send_001",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_002",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_003",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_004",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_005",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_006",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_007",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_008",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_009",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Unused_1",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_10",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_11",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_12",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_2",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_3",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_4",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_5",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_6",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_7",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_8",
+        "type": "Terminator"
+      }
+    ],
+    "stopTime": "0.14000000000000001"
+  },
+  {
+    "id": "SISO_VB_VO",
+    "cfg": {
+      "id": "SISO_VB_VO",
+      "Vs": 48,
+      "Vb": 72,
+      "Vref": 120,
+      "refs": 120,
+      "Rloads": [
+        48,
+        96
+      ],
+      "L": 0.00011,
+      "Co": 0.00022,
+      "fsw": 100000,
+      "Ts": 1E-5,
+      "N": 30,
+      "blockTo": 1,
+      "Qx": 0.3,
+      "Qy": 8000,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "voltageMin": -0.01,
+      "dutyMax": 0.94,
+      "hiddenSizes": [
+        16,
+        8
+      ],
+      "groupLoadFamilies": true,
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ],
+      "nominalDuty": 0.41,
+      "calibrateRange": [
+        0,
+        0.7
+      ],
+      "warmupTime": 0.25,
+      "segmentTime": 0.01,
+      "openMaxStep": 5E-7,
+      "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+      "events": [
+        0.12,
+        0.14
+      ],
+      "source": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\circuit\\template\\SISO_VB72V_Vo200V.slx",
+      "activePwm": [
+        "PWM Generator\n(DC-DC)3"
+      ],
+      "voltageSensor": "Voltage Measurement",
+      "currentSensor": "Current Measurement3",
+      "nu": 1,
+      "feedbackTiming": "sample_hold",
+      "paperFigure": 6,
+      "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+      "codeRel": "EMPC_LOOP/SU_SISO_VB72_Vo120/code",
+      "caseRel": "EMPC_LOOP/SU_SISO_VB72_Vo120",
+      "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\code",
+      "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120"
+    },
+    "initialization": {
+      "Co": 0.00022,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "Qx": 0.3,
+      "N": 30,
+      "blockTo": 1,
+      "warmupDuty": 0.4065,
+      "startupRamp": 0.04,
+      "warmup": 0.06,
+      "modelFile": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\code\\models\\identified_model.mat",
+      "tag": "C220_PRBS_Q03_N30_ramp40",
+      "controllerDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\code",
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ]
+    },
+    "models": [
+      {
+        "Rload": 48,
+        "A": [
+          [
+            0.981210561802559,
+            -0.050873522603868473
+          ],
+          [
+            0.026609409977881721,
+            0.99833257609624171
+          ]
+        ],
+        "B": [
+          9.9091976933631116,
+          0.026280522186662891
+        ],
+        "f": [
+          2.10844419412783,
+          0.10924669385699359
+        ],
+        "anchor": {
+          "x": [
+            3.0094245472906995,
+            119.98938672030211
+          ],
+          "u": 0.40895177443751307,
+          "Rload": 48
+        }
+      },
+      {
+        "Rload": 96,
+        "A": [
+          [
+            0.95159989213525031,
+            -0.021002597213375988
+          ],
+          [
+            0.026655875048822369,
+            0.9986198937509112
+          ]
+        ],
+        "B": [
+          8.9269629251231351,
+          0.11821343008494181
+        ],
+        "f": [
+          -1.065817428153113,
+          0.093914019100530766
+        ],
+        "anchor": {
+          "x": [
+            0.886201930975823,
+            119.98213197395789
+          ],
+          "u": 0.40648159046805921,
+          "Rload": 96
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "name": "TPC_Controller",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Logging",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Receive_001_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_007_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_008_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_009_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_010_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_011_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_012_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Send_001",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_002",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_003",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_004",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_005",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_006",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_007",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_008",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_009",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_010",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_011",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_012",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Unused_1",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_10",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_11",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_2",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_3",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_4",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_5",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_6",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_7",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_8",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_9",
+        "type": "Terminator"
+      }
+    ],
+    "stopTime": "0.21000000000000002"
+  },
+  {
+    "id": "SIDO",
+    "cfg": {
+      "id": "SIDO",
+      "Vs": 48,
+      "Vb": 72,
+      "Vref": 120,
+      "refs": 120,
+      "Rloads": [
+        48,
+        96
+      ],
+      "L": 0.00011,
+      "Co": 0.00022,
+      "fsw": 100000,
+      "Ts": 1E-5,
+      "N": 20,
+      "blockTo": 5,
+      "Qx": 3,
+      "Qy": 8000,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "voltageMin": -0.01,
+      "dutyMax": 0.749,
+      "fixedDutyS1": 0.75,
+      "hiddenSizes": [
+        16,
+        8
+      ],
+      "groupLoadFamilies": true,
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ],
+      "nominalDuty": 0.677,
+      "calibrateRange": [
+        0.05,
+        0.9
+      ],
+      "warmupTime": 0.25,
+      "segmentTime": 0.01,
+      "openMaxStep": 5E-7,
+      "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+      "events": [
+        0.02,
+        0.025
+      ],
+      "source": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120\\circuit\\template\\SIDO_VS_VBVo.slx",
+      "activePwm": [
+        "PWM Generator\n(DC-DC)1"
+      ],
+      "voltageSensor": "Voltage Measurement",
+      "currentSensor": "Current Measurement3",
+      "nu": 1,
+      "feedbackTiming": "sample_hold",
+      "paperFigure": 7,
+      "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+      "codeRel": "EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120/code",
+      "caseRel": "EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120",
+      "fixedPwm": "PWM Generator\n(DC-DC)2",
+      "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120\\code",
+      "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120"
+    },
+    "initialization": {
+      "Co": 0.00022,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "Qx": 3,
+      "N": 20,
+      "blockTo": 5,
+      "warmupDuty": 0.6919,
+      "startupRamp": 0.1,
+      "warmup": 0.14,
+      "modelFile": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120\\code\\models\\identified_model.mat",
+      "tag": "C220_N20_B5_ramp100",
+      "controllerDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120\\code",
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ]
+    },
+    "models": [
+      {
+        "Rload": 48,
+        "A": [
+          [
+            0.98600049662958622,
+            -0.021850833920260243
+          ],
+          [
+            0.011200656920481791,
+            0.99891413219293568
+          ]
+        ],
+        "B": [
+          6.1786429318824432,
+          0.070396577867272742
+        ],
+        "f": [
+          -1.5919694031408582,
+          -0.017242491207005994
+        ],
+        "anchor": {
+          "x": [
+            8.7642016217272012,
+            120.03495553005644
+          ],
+          "u": 0.70201948858611085,
+          "Rload": 48
+        }
+      },
+      {
+        "Rload": 96,
+        "A": [
+          [
+            0.9850910833013159,
+            -0.023874235659518718
+          ],
+          [
+            0.01119174151313742,
+            0.99936366761289031
+          ]
+        ],
+        "B": [
+          6.2368198252771965,
+          0.071010977534187808
+        ],
+        "f": [
+          -1.3940767888305743,
+          -0.014908263156501074
+        ],
+        "anchor": {
+          "x": [
+            3.7654716656088256,
+            120.01381175020629
+          ],
+          "u": 0.69193179172113284,
+          "Rload": 96
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "name": "TPC_Controller",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Logging",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Off_9",
+        "type": "Constant"
+      },
+      {
+        "name": "TPC_Receive_001_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_001_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_007_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_008_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_009_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_010_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_011_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_012_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Send_001",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_002",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_003",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_004",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_005",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_006",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_007",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_008",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_009",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_010",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_011",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_012",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Unused_1",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_10",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_11",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_2",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_3",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_4",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_5",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_6",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_7",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_8",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_9",
+        "type": "Terminator"
+      }
+    ],
+    "stopTime": "0.17500000000000002"
+  },
+  {
+    "id": "DISO",
+    "cfg": {
+      "id": "DISO",
+      "Vs": 48,
+      "Vb": 72,
+      "Vref": 120,
+      "refs": 120,
+      "Rloads": [
+        48,
+        96
+      ],
+      "L": 0.00011,
+      "Co": 0.00022,
+      "fsw": 100000,
+      "Ts": 1E-5,
+      "N": 20,
+      "blockTo": 1,
+      "Qx": 0.03,
+      "Qy": 5000,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "voltageMin": -0.01,
+      "dutyMin": [
+        0.335,
+        0.179
+      ],
+      "dutyMax": [
+        0.42,
+        0.27
+      ],
+      "explicitInitialVoltageDomain": [
+        115,
+        125
+      ],
+      "hiddenSizes": [
+        16,
+        8
+      ],
+      "groupLoadFamilies": true,
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ],
+      "nominalDuty": [
+        0.362,
+        0.205
+      ],
+      "calibrateRange": [
+        0.2,
+        1.35
+      ],
+      "warmupTime": 0.25,
+      "segmentTime": 0.01,
+      "openMaxStep": 5E-7,
+      "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+      "events": [
+        0.05,
+        0.06
+      ],
+      "source": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\circuit\\template\\DISO_VS270W_VB30W.slx",
+      "activePwm": [
+        "PWM Generator\n(DC-DC)",
+        "PWM Generator\n(DC-DC)2"
+      ],
+      "voltageSensor": "Voltage Measurement",
+      "currentSensor": "Current Measurement3",
+      "nu": 2,
+      "feedbackTiming": "sample_hold",
+      "paperFigure": 8,
+      "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+      "codeRel": "EMPC_LOOP/SU_DISO_VS48_VB72_Vo120/code",
+      "caseRel": "EMPC_LOOP/SU_DISO_VS48_VB72_Vo120",
+      "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code",
+      "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120"
+    },
+    "initialization": {
+      "Co": 0.00022,
+      "currentMax": 18,
+      "currentMin": -0.02,
+      "Qx": 0.03,
+      "N": 20,
+      "blockTo": 1,
+      "dutyMin": [
+        0.335,
+        0.179
+      ],
+      "dutyMax": [
+        0.42,
+        0.27
+      ],
+      "explicitInitialVoltageDomain": [
+        115,
+        125
+      ],
+      "warmupDuty": [
+        0.3612,
+        0.2044
+      ],
+      "startupRamp": 0.08,
+      "warmup": 0.12,
+      "modelFile": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\models\\identified_model.mat",
+      "tag": "C220_N20_localQuery",
+      "controllerDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code",
+      "nnVoltageDomain": [
+        115,
+        125
+      ],
+      "nnCurrentDomain": [
+        -0.02,
+        18
+      ]
+    },
+    "models": [
+      {
+        "Rload": 48,
+        "A": [
+          [
+            0.982443537964724,
+            -0.037783760186382
+          ],
+          [
+            0.019447367652944334,
+            0.99861640706468568
+          ]
+        ],
+        "B": [
+          [
+            14.031423233652209,
+            10.112385461346864
+          ],
+          [
+            -0.0085952612145476764,
+            -0.1470188667426581
+          ]
+        ],
+        "f": [
+          -2.5420048520559524,
+          0.098037784589550467
+        ],
+        "anchor": {
+          "x": [
+            5.2052760039878052,
+            119.94003534686921
+          ],
+          "u": [
+            0.36260072974775909,
+            0.20542851327353856
+          ],
+          "Rload": 48
+        }
+      },
+      {
+        "Rload": 96,
+        "A": [
+          [
+            0.96820335188854545,
+            -0.030712356323954797
+          ],
+          [
+            0.019499867917864417,
+            0.99915022285321309
+          ]
+        ],
+        "B": [
+          [
+            12.970522014331022,
+            9.3606360293863151
+          ],
+          [
+            0.0955504085656055,
+            -0.030357689946446477
+          ]
+        ],
+        "f": [
+          -2.8372623862970738,
+          0.028707258213922685
+        ],
+        "anchor": {
+          "x": [
+            2.3033275066994583,
+            119.92639397623579
+          ],
+          "u": [
+            0.36095610475011042,
+            0.20425252259434709
+          ],
+          "Rload": 96
+        }
+      }
+    ],
+    "blocks": [
+      {
+        "name": "TPC_Controller",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Logging",
+        "type": "SubSystem"
+      },
+      {
+        "name": "TPC_Receive_001_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_001_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_002_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_003_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_004_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_005_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_006_002",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_007_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_008_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_009_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_010_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_011_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_012_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Receive_013_001",
+        "type": "From"
+      },
+      {
+        "name": "TPC_Send_001",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_002",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_003",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_004",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_005",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_006",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_007",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_008",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_009",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_010",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_011",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_012",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Send_013",
+        "type": "Goto"
+      },
+      {
+        "name": "TPC_Unused_1",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_10",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_11",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_12",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_13",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_14",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_15",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_16",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_2",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_3",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_4",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_5",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_6",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_7",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_8",
+        "type": "Terminator"
+      },
+      {
+        "name": "TPC_Unused_9",
+        "type": "Terminator"
+      }
+    ],
+    "stopTime": "0.19"
+  }
+]

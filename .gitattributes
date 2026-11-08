@@ -3,6 +3,7 @@
 *.md text eol=lf
 *.json text eol=lf
 *.py text eol=lf
+pi_comparison/pi_controller_template.txt text eol=lf
 *.mat filter=lfs diff=lfs merge=lfs -text
 *.slx filter=lfs diff=lfs merge=lfs -text
 *.fig filter=lfs diff=lfs merge=lfs -text
