@@ -1,0 +1,16 @@
+{
+  "copied_files": 230,
+  "sources_unchanged": true,
+  "broken_markdown_links": [],
+  "old_workspace_links": [],
+  "entry_targets_exist": true,
+  "full_simulations_repeated": false,
+  "matlab_help_passed": true,
+  "matlab_empc_query": {
+    "iL_A": 10,
+    "Vo_V": 200,
+    "duty": 0.0826925450025,
+    "region": 87,
+    "resolved_from_main_project": true
+  }
+}

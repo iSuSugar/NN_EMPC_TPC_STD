@@ -1,0 +1,12 @@
+{
+  "diagrams": [
+    "fig01_topology",
+    "fig02_power_flows",
+    "fig04_framework",
+    "fig05_network",
+    "fig06_timing",
+    "fig03_gate_sequences"
+  ],
+  "gateSource": "D:/Project/fpga_project/tpc_five_modes/tpc_five_modes.v",
+  "dataRoot": "D:/Project/NN_EMPC_TPC/48_72_120_C220_16_8/EMPC_LOOP"
+}

@@ -1,0 +1,41 @@
+% !TeX program = xelatex
+\documentclass[border=4pt]{standalone}
+\usepackage[UTF8,fontset=fandol]{ctex}
+\usepackage{amsmath,amssymb,tikz,circuitikz}
+\usetikzlibrary{arrows.meta,positioning,calc,fit}
+\begin{document}
+\begin{tikzpicture}[>=Latex,every node/.style={font=\small},port/.style={draw,rectangle,minimum width=11mm,minimum height=7mm},line width=.6pt]
+\begin{scope}[shift={(0.0,0.0)}]
+\node[port] (p0) at (0,0) {$V_s$};
+\node[port] (p1) at (2.8,0) {$V_b$};
+\node[port] (p2) at (1.4,-1.5) {$V_o$};
+\draw[->] (p0)--(p1);
+\node at (1.4,.8) {SISO: $V_s\to V_b$};\end{scope}
+\begin{scope}[shift={(4.3,0.0)}]
+\node[port] (p0) at (0,0) {$V_s$};
+\node[port] (p1) at (2.8,0) {$V_b$};
+\node[port] (p2) at (1.4,-1.5) {$V_o$};
+\draw[->] (p0)--(p2);
+\node at (1.4,.8) {SISO: $V_s\to V_o$};\end{scope}
+\begin{scope}[shift={(8.6,0.0)}]
+\node[port] (p0) at (0,0) {$V_s$};
+\node[port] (p1) at (2.8,0) {$V_b$};
+\node[port] (p2) at (1.4,-1.5) {$V_o$};
+\draw[->] (p1)--(p2);
+\node at (1.4,.8) {SISO: $V_b\to V_o$};\end{scope}
+\begin{scope}[shift={(0.0,-3.2)}]
+\node[port] (p0) at (0,0) {$V_s$};
+\node[port] (p1) at (2.8,0) {$V_b$};
+\node[port] (p2) at (1.4,-1.5) {$V_o$};
+\draw[->] (p0)--(p1);
+\draw[->] (p0)--(p2);
+\node at (1.4,.8) {SIDO: $P_b<0$};\end{scope}
+\begin{scope}[shift={(4.3,-3.2)}]
+\node[port] (p0) at (0,0) {$V_s$};
+\node[port] (p1) at (2.8,0) {$V_b$};
+\node[port] (p2) at (1.4,-1.5) {$V_o$};
+\draw[->] (p0)--(p2);
+\draw[->] (p1)--(p2);
+\node at (1.4,.8) {DISO: $P_b>0$};\end{scope}
+\end{tikzpicture}
+\end{document}

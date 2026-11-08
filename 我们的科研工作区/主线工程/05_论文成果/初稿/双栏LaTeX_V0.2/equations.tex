@@ -1,0 +1,47 @@
+% Mathematical expressions, in manuscript order.
+\begin{equation}P_s+P_b=P_o+P_{\mathrm{loss}}\end{equation}
+\begin{equation}g(t)=[S_1(t),S_2(t),S_3(t)]^{\mathsf T}\in\{0,1\}^{3}\end{equation}
+\begin{equation}\begin{aligned}D_{so}V_s-(1-D_{so})V_o&=0,\\ \frac{V_o}{V_s}&=\frac{D_{so}}{1-D_{so}}.\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}D_{sb}V_s+(1-D_{sb})(V_s-V_b)&=0,\\ D_{sb}&=1-\frac{V_s}{V_b}.\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}D_{bo}V_b+(1-D_{bo})(V_b-V_o)&=0,\\ D_{bo}&=1-\frac{V_b}{V_o}.\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}\delta_a&=D_2,\quad \delta_b=D_1-D_2,\\ \delta_c&=1-D_1,\quad\delta_a+\delta_b+\delta_c=1.\end{aligned}\end{equation}
+\begin{equation}\delta_a V_s+\delta_b(V_s-V_b)-\delta_cV_o=0\end{equation}
+\begin{equation}V_o=\frac{V_sD_1-V_b(D_1-D_2)}{1-D_1}\end{equation}
+\begin{equation}\begin{aligned}[\tau_1,\tau_2,\tau_3,\tau_4]&=T_s[\alpha q_s,\alpha(1-q_s),\\ &\quad(1-\alpha)q_b,(1-\alpha)(1-q_b)].\end{aligned}\end{equation}
+\begin{equation}110\ \longrightarrow\ 000\ \longrightarrow\ 011\ \longrightarrow\ 010\end{equation}
+\begin{equation}\begin{aligned}D_{S1}&=\alpha q_s,\quad D_{S3}=(1-\alpha)q_b,\\ D_{S2}&=\alpha q_s+(1-\alpha).\end{aligned}\end{equation}
+\begin{equation}D_{s\to o}=\frac{V_o}{V_s+V_o}\end{equation}
+\begin{equation}\bar{x}[k]=\frac{1}{T_s}\int_{kT_s}^{(k+1)T_s}x(t)\,\mathrm{d}t\end{equation}
+\begin{equation}\bar{x}[k+1]=A_{m,R}\bar{x}[k]+B_{m,R}u[k]+f_{m,R}+w[k]\end{equation}
+\begin{equation}\begin{aligned}[\hat A\ \hat B\ \hat f]&=X_+\Phi^\dagger,\\ \Phi&=\begin{bmatrix}X_-\\ U\\ \mathbf 1^{\mathsf T}\end{bmatrix}.\end{aligned}\end{equation}
+\begin{equation}(I-A_{m,R})x_e-B_{m,R}u_e=f_{m,R}\end{equation}
+\begin{equation}J=\sum_{j=0}^{N-1}\left[q_v(v_{k+j|k}-V_{\mathrm{ref}})^2+q_i i_{L,k+j|k}^{\,2}\right]\end{equation}
+\begin{equation}\mathbf X=\mathcal A x_k+\mathcal B\mathbf U+\mathcal F\end{equation}
+\begin{equation}\begin{aligned}\min_{\mathbf U}\quad&\tfrac12\mathbf U^{\mathsf T}H\mathbf U+q(x_k)^{\mathsf T}\mathbf U,\\ \mathrm{s.t.}\quad&G\mathbf U\le h+E x_k.\end{aligned}\end{equation}
+\begin{equation}u_{k+j|k}=u_{k|k},\qquad j=0,\ldots,b-1\end{equation}
+\begin{equation}\begin{aligned}x_{\min}&\le x_{k+j|k}\le x_{\max},\\ u_{\min}&\le u_{k+j|k}\le u_{\max}.\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}x&=Tz,\quad A_z=T^{-1}AT,\\ B_z&=T^{-1}B,\quad f_z=T^{-1}f.\end{aligned}\end{equation}
+\begin{equation}u^*=K_r z+g_r,\qquad z\in\Omega_r\end{equation}
+\begin{equation}s_k=[i_L(k),v(k),I_o(k),V_{\mathrm{ref}}]^{\mathsf T}\end{equation}
+\begin{equation}\begin{aligned}z_i&=g_i s_i+c_i,\\ g_i&=\frac{2}{s_{i,\max}-s_{i,\min}},\quad c_i=-1-g_i s_{i,\min}.\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}h_1&=\max(0,W_1z+b_1),\\h_2&=\max(0,W_2h_1+b_2).\end{aligned}\end{equation}
+\begin{equation}\hat u=W_3h_2+b_3\end{equation}
+\begin{equation}\mathcal L(\theta)=\frac{\sum_{n=1}^{M}\omega_n\|\hat u_n-u_n^*\|_2^2}{\sum_{n=1}^{M}\omega_n}\end{equation}
+\begin{equation}\phi(a)-\phi(-a)=a,\qquad \phi(a)=\max(0,a)\end{equation}
+\begin{equation}N_{\mathrm{par}}=5h_1+h_1h_2+h_2+h_2n_u+n_u\end{equation}
+\begin{equation}N_{\mathrm{MAC}}=4h_1+h_1h_2+h_2n_u\end{equation}
+\begin{equation}e_{k+1}=(A+BL_r)e_k+B\delta u_k+w_k\end{equation}
+\begin{equation}\begin{aligned}\|e_k\|\le{}&c\rho^k\|e_0\|\\ &+\frac{c(1-\rho^k)}{1-\rho}(\|B\|\varepsilon+\bar w).\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}i_L(t_s^+)&=i_L(t_s^-),\\ v_C(t_s^+)&=v_C(t_s^-).\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}u[k]&=\operatorname{sat}_{\mathcal U_\sigma}(f_{\theta_\sigma}(s[k])),\\g(t)&=\mathcal G_\sigma(u[k],\varphi(t)).\end{aligned}\end{equation}
+\begin{equation}\begin{aligned}\mathrm{RMSE}_u&=\sqrt{M^{-1}\sum_{n=1}^{M}\|\hat u_n-u_n^*\|_2^2},\\ E_{u,\max}&=\max_n\|\hat u_n-u_n^*\|_\infty.\end{aligned}\end{equation}
+\begin{equation}\epsilon_{\mathrm{ss}}=100\max_j\frac{|\bar v_j-V_{\mathrm{ref}}|}{V_{\mathrm{ref}}}\end{equation}
+\begin{equation}N_{\mathrm{PWM}}=\frac{f_{\mathrm{clk}}}{f_s}=\frac{50\times10^6}{100\times10^3}=500\end{equation}
+\begin{equation}x_{\mathrm{phys},i}=\kappa_i\bigl(n_{\mathrm{ADC},i}-n_{0,i}\bigr)\end{equation}
+\begin{equation}\begin{aligned}n_i&=\operatorname{round}(N_{\mathrm{PWM}}d_i),\\ |d_i-n_i/N_{\mathrm{PWM}}|&\le (2N_{\mathrm{PWM}})^{-1}.\end{aligned}\end{equation}
+\begin{equation}\sigma_{\mathrm{active}}^{+}=\begin{cases}\sigma_{\mathrm{request}},&n_{\mathrm{PWM}}=0,\\ \sigma_{\mathrm{active}},&\text{其他时刻}.\end{cases}\end{equation}
+\begin{equation}\begin{aligned}T_{\mathrm{tot}}={}&T_{\mathrm{ADC}}+T_{\mathrm{pre}}+T_{\mathrm{NN}}\\ &+T_{\mathrm{check}}+T_{\mathrm{write}}+T_{\mathrm{margin}}\le T_s.\end{aligned}\end{equation}
+\begin{equation}E_{\mathrm{num}}=\max_n\|f_{\mathrm{deploy}}(s_n)-f_{\mathrm{train}}(s_n)\|_\infty\end{equation}
+\begin{equation}P_j=\frac{1}{T_w}\int_{t_0}^{t_0+T_w}v_j(t)i_j(t)\,\mathrm dt\end{equation}
+\begin{equation}\eta_{\mathrm{DISO}}=\frac{P_o}{P_s+P_b},\qquad P_b>0\end{equation}
+\begin{equation}\eta_{\mathrm{SIDO}}=\frac{P_o+|P_b|}{P_s},\qquad P_b<0\end{equation}

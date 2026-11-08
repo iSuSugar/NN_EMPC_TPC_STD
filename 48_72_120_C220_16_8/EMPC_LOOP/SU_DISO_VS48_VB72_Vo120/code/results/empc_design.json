@@ -1,0 +1,34 @@
+[
+  {
+    "mode": "DISO",
+    "Rload": 48,
+    "Vref": 120,
+    "scale": [
+      18,
+      144
+    ],
+    "voltageMin": -0.01,
+    "voltageMax": 144,
+    "currentMax": 18,
+    "functionName": "Bstep_DISO_R48_V120_T10us",
+    "nu": 2,
+    "elapsedSeconds": 162.1358994,
+    "regionCount": 4323
+  },
+  {
+    "mode": "DISO",
+    "Rload": 96,
+    "Vref": 120,
+    "scale": [
+      18,
+      144
+    ],
+    "voltageMin": -0.01,
+    "voltageMax": 144,
+    "currentMax": 18,
+    "functionName": "Bstep_DISO_R96_V120_T10us",
+    "nu": 2,
+    "elapsedSeconds": 220.8025028,
+    "regionCount": 4274
+  }
+]

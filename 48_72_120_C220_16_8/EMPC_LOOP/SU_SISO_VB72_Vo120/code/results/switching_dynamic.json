@@ -1,0 +1,156 @@
+{
+  "duration": 0.15,
+  "finalMeanVoltage": 119.99261207237632,
+  "finalRelativeError": 6.15660635306936E-5,
+  "peakCurrentIncludingStartup": 8.6874025436495312,
+  "peakCurrentAfter10ms": 8.6874025436495312,
+  "minimumVoltage": 119.80819273181854,
+  "maximumVoltage": 120.08089294277364,
+  "rawDutyMin": 0.092072109189224538,
+  "rawDutyMax": 0.93813553397673766,
+  "minimumCurrent": -0.0047620773891009728,
+  "peakAbsoluteCurrentIncludingStartup": 8.6874025436495312,
+  "peakAbsoluteCurrentAfter10ms": 8.6874025436495312,
+  "events": [
+    {
+      "time": 0.12,
+      "preMean": 119.99261120221176,
+      "postMean": 119.98109159892734,
+      "peakDepartureV": 0.12452018937534604,
+      "settlingToPostUs": 34.949999999991931,
+      "toleranceV": 0.01
+    },
+    {
+      "time": 0.14,
+      "preMean": 119.98109159880785,
+      "postMean": 119.99261113954661,
+      "peakDepartureV": 0.090687871714607127,
+      "settlingToPostUs": 54.949999999998056,
+      "toleranceV": 0.01
+    }
+  ],
+  "plateaus": [
+    {
+      "timeWindow": [
+        0.119,
+        0.12
+      ],
+      "meanVoltage": 119.99261120221163,
+      "relativeError": 6.1573314903085041E-5,
+      "meanLoadCurrent": 1.251121807446496,
+      "meanOutputPower": 150.12537331697803,
+      "meanDutyCommand": 0.40658185066578367,
+      "minimumDutyCommand": 0.40658166849057764,
+      "maximumDutyCommand": 0.40658203796537851,
+      "cycleMeanCurrentPeakToPeak": 5.5553980571332318E-7,
+      "meanInductorCurrent": 2.2097271701395895,
+      "rmsInductorCurrent": 2.3379049257455216,
+      "minimumInductorCurrent": 0.88764095989475389,
+      "maximumInductorCurrent": 3.5167573087604662
+    },
+    {
+      "timeWindow": [
+        0.139,
+        0.14
+      ],
+      "meanVoltage": 119.98109159880781,
+      "relativeError": 0.00015757000993488202,
+      "meanLoadCurrent": 2.4970077344548249,
+      "meanOutputPower": 299.5937181506772,
+      "meanDutyCommand": 0.40901012435397971,
+      "minimumDutyCommand": 0.40901010039939367,
+      "maximumDutyCommand": 0.40901015114892947,
+      "cycleMeanCurrentPeakToPeak": 1.5373713235788955E-7,
+      "meanInductorCurrent": 4.3269667259303484,
+      "rmsInductorCurrent": 4.3938326363676419,
+      "minimumInductorCurrent": 3.0047055458488909,
+      "maximumInductorCurrent": 5.6447016362817157
+    },
+    {
+      "timeWindow": [
+        0.149,
+        0.15
+      ],
+      "meanVoltage": 119.99261113672627,
+      "relativeError": 6.1573860614450027E-5,
+      "meanLoadCurrent": 1.2511218067637,
+      "meanOutputPower": 150.12537315311855,
+      "meanDutyCommand": 0.40658221584615251,
+      "minimumDutyCommand": 0.40658214345202,
+      "maximumDutyCommand": 0.406582282303656,
+      "cycleMeanCurrentPeakToPeak": 2.9080819574645034E-7,
+      "meanInductorCurrent": 2.2097283420189977,
+      "rmsInductorCurrent": 2.3379062835442213,
+      "minimumInductorCurrent": 0.88764127970445761,
+      "maximumInductorCurrent": 3.5167603772955109
+    }
+  ],
+  "allPlateausRegulated": true,
+  "voltageRegulated": true,
+  "currentWithin20AIncludingStartup": true,
+  "note": "Recovery is computed from PWM-cycle means and the declared band; paper does not define the same numerical band. Cold-start current is reported separately. Final voltage alone does not imply all load/mode plateaus pass.",
+  "id": "SISO_VB_VO",
+  "nnArchitecture": [
+    16,
+    8
+  ],
+  "nnFile": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\code\\models\\net_48_72_120.mat",
+  "controlTs": 1E-5,
+  "nativeNNBlocks": true,
+  "startupPeakIsAcceptanceGate": false,
+  "initializationSeconds": 0.06,
+  "initializationPeakCurrentA": 4.6496415167463168,
+  "feedbackWindowPeakAbsoluteCurrent": 8.6874025436495312,
+  "fullRunPeakCurrentA": 8.6874025436495312,
+  "ports": {
+    "channelNames": [
+      "Current Measurement4",
+      "Current Measurement7",
+      "Mosfet_gate",
+      "Mosfet1_gate",
+      "Mosfet2_gate"
+    ],
+    "windows": [
+      {
+        "timeWindow": [
+          0.119,
+          0.12
+        ],
+        "meanMeasurements": [
+          2.0274403381724896E-5,
+          2.2097069199985344,
+          0,
+          1,
+          0.41
+        ]
+      },
+      {
+        "timeWindow": [
+          0.139,
+          0.14
+        ],
+        "meanMeasurements": [
+          2.6490003580806853E-5,
+          4.3269403197756766,
+          0,
+          1,
+          0.41
+        ]
+      },
+      {
+        "timeWindow": [
+          0.149,
+          0.15
+        ],
+        "meanMeasurements": [
+          2.0275699779339582E-5,
+          2.2097081783476029,
+          0,
+          1,
+          0.41
+        ]
+      }
+    ],
+    "measurementConvention": "Current Measurement4: Vs positive terminal to converter; Current Measurement7: Vb positive terminal to converter in SIDO/DISO and switching circuits. Gates are actual binary gate signals, not duty commands."
+  }
+}

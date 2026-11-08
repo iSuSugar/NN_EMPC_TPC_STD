@@ -1,0 +1,20 @@
+
+\begin{tikzpicture}[>=Latex,node distance=5mm,every node/.style={font=\small},b/.style={draw,align=center,minimum width=25mm,minimum height=11mm},line width=.6pt]
+\node[b] (excite) at (0,0) {周期平均数据\\与仿射辨识};
+\node[b,right=of excite] (mpc) {模式/负载教师\\约束MPC};
+\node[b,right=of mpc] (pwa) {显式控制律\\可行域采样};
+\node[b,right=of pwa] (learn) {分组数据划分\\加权网络训练};
+\node[b,right=of learn] (weights) {模式相关权重\\与归一化系数};
+\foreach \a/\b in {excite/mpc,mpc/pwa,pwa/learn,learn/weights}\draw[->](\a)--(\b);
+\node[above=3mm of pwa] {离线：辨识、教师生成与网络拟合};
+\node[b] (adc) at (0,-3) {同步采样\\$i_L,v,I_o,V_{\rm ref}$};
+\node[b,right=of adc] (norm) {量程换算\\与归一化};
+\node[b,right=of norm] (nn) {模式选择\\ReLU网络推理};
+\node[b,right=of nn] (limit) {命令限幅\\分段PWM映射};
+\node[b,right=of limit] (plant) {三端口\\功率级};
+\foreach \a/\b in {adc/norm,norm/nn,nn/limit,limit/plant}\draw[->](\a)--(\b);
+\draw[->] (weights.south)--++(0,-.8)-|(nn.north);
+\draw[->] (plant.south)--++(0,-.8)-|(adc.south);
+\node[above=3mm of norm] {在线：每个PWM周期执行一次};
+\node[draw,dashed,fit=(excite)(weights),inner sep=4mm] {};
+\end{tikzpicture}

@@ -1,0 +1,45 @@
+# Local history and third-party reference collections
+/ICPRE会议论文资料+修改版/
+/我们的科研工作区/元器件参考论文/
+/我们的科研工作区/202107191.xmcd
+/我们的科研工作区/主线工程/02_仿真工程/
+/我们的科研工作区/主线工程/05_论文成果/模仿论文/
+/我们的科研工作区/主线工程/03_嵌入式与样机/fpga_zynq+acm7606c学习/code/
+/我们的科研工作区/主线工程/03_嵌入式与样机/fpga_zynq+acm7606c学习/*.pdf
+# Build environments, caches and temporary exports
+.codex-build/
+.codex-private/
+.Xil/
+.review_tmp/
+.选型构建/
+.build*/
+.chart-data-*/
+node_modules/
+__pycache__/
+*.pyc
+*.slxc
+slprj/
+*_ert_rtw/
+*.asv
+*.autosave
+_backups/
+/tmp/
+/outputs/
+vivado.log
+vivado.jou
+*.backup.log
+*.backup.jou
+~$*
+.env
+.env.*
+*.pem
+*.key
+# Existing canonical switching_dynamic.mat is retained; native_* is its copy.
+**/results/native_switching_dynamic.mat
+**/results/native_switching_dynamic.json
+# Existing source folders already contain the contents of these zip exports.
+/我们的科研工作区/主线工程/05_论文成果/初稿/*.zip
+/我们的科研工作区/主线工程/05_论文成果/初稿/*V0.1.docx
+*.aux
+*.synctex.gz
+**/双栏LaTeX_V0.2/*.log

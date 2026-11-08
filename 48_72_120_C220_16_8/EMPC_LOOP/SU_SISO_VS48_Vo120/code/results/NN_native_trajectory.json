@@ -1,0 +1,9 @@
+{
+  "trajectory": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120\\code\\results\\native_switching_dynamic.mat",
+  "totalPoints": 8001,
+  "feasiblePoints": 8001,
+  "RMSE": 0.00065169887220396685,
+  "maximumAbsoluteDutyError": 0.011285798188493512,
+  "rawNetworkReplayRMSE": 0,
+  "note": "Actual circuit state queries; independent of random sample MSE. No idealized Io replacement or state clipping."
+}

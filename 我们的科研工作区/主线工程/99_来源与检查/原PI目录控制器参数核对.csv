@@ -1,0 +1,18 @@
+file,block,stop_s,controller,P,I,D,N,time_domain
+DISO_VS270W_VB30W.slx,PID Controller,0.08,PID,1,400,0.00001,100,Continuous-time
+DISO_VS270W_VB30W.slx,PID Controller1,0.08,PID,1,400,0.00001,100,Continuous-time
+DISO_VS270W_VB30W_duibi.slx,PID Controller,0.08,PID,1,400,0.00001,100,Continuous-time
+DISO_VS270W_VB30W_duibi.slx,PID Controller1,0.08,PID,1,400,0.00001,100,Continuous-time
+SIDO_VS_VBVo.slx,PID Controller,0.1,PID,10,400,0.00001,100,Continuous-time
+SIDO_VS_VBVo_duibi.slx,PID Controller,0.1,PID,10,400,0.00001,100,Continuous-time
+SISO_VB72_Vo200.slx,PID Controller,0.2,PID,5,3000,0.01,100,Continuous-time
+SISO_VB72_Vo200_duibi.slx,PID Controller,0.12,PID,5,3000,0.01,100,Continuous-time
+SISO_VS48_VB72.slx,PID Controller,0.05,PID,1,400,0.00001,100,Continuous-time
+SISO_VS48_VB72_duibi.slx,PID Controller,0.07,PID,1,400,0.00001,100,Continuous-time
+SISO_VS48_Vo200.slx,PID Controller,0.08,PID,1,600,0.0001,100,Continuous-time
+SISO_VS48_Vo200_chaotiao.slx,PID Controller,0.08,PID,0.6,800,0.0001,100,Continuous-time
+SISO_VS48_Vo200_duibi.slx,PID Controller,0.08,PID,0.6,800,0.0001,100,Continuous-time
+PI切换\SIDO_DISO切换\change_DISO_SIDO_DISO.slx,,0.1,,,,,,
+PI切换\SISO_DISO切换\change_DISO_SISO_DISO.slx,,0.08,,,,,,
+PI切换\SISO_SIDO切换\change_SIDO_SISO_SIDO.slx,PID Controller,0.08,PID,10,400,0.00001,100,Continuous-time
+PI切换\SISO_SIDO切换\change_SIDO_SISO_SIDO.slx,PID Controller1,0.08,PID,0.6,800,0.0001,100,Continuous-time

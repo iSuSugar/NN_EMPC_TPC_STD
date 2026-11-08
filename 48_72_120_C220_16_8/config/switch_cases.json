@@ -1,0 +1,144 @@
+[
+  {
+    "id": "SIDO_SISO_SIDO",
+    "source": "EMPC_LOOP/SU_SIDO_SISO_SIDO_120/circuit/template/change_SIDO_SISO_SIDO.slx",
+    "Vref": 120,
+    "events": [
+      0.05,
+      0.07
+    ],
+    "paperFigure": 9,
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_SISO_SIDO_120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_SISO_SIDO_120\\code",
+    "Rload": 48,
+    "Ts": 1e-05,
+    "mapping": [
+      {
+        "pwm": "PWM Generator\n(DC-DC)1",
+        "mode": "SISO_VS_VO",
+        "head": 1
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)2",
+        "mode": "SIDO",
+        "head": 1
+      }
+    ],
+    "fixedDutyS1": 0.75,
+    "codeRel": "EMPC_LOOP/SU_SIDO_SISO_SIDO_120/code",
+    "caseRel": "EMPC_LOOP/SU_SIDO_SISO_SIDO_120",
+    "feedbackTiming": "sample_hold",
+    "Co": 0.00022,
+    "L": 0.00011,
+    "warmupTime": 0.25
+  },
+  {
+    "id": "DISO_SISO_DISO",
+    "source": "EMPC_LOOP/SU_DISO_SISO_DISO_120/circuit/template/change_DISO_SISO_DISO.slx",
+    "Vref": 120,
+    "events": [
+      0.05,
+      0.07
+    ],
+    "paperFigure": 10,
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SISO_DISO_120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SISO_DISO_120\\code",
+    "Rload": 48,
+    "Ts": 1e-05,
+    "mapping": [
+      {
+        "pwm": "PWM Generator\n(DC-DC)",
+        "mode": "DISO",
+        "head": 1
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)2",
+        "mode": "DISO",
+        "head": 2
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)1",
+        "mode": "SISO_VS_VO",
+        "head": 1
+      }
+    ],
+    "fixedDutyS1": 0.75,
+    "codeRel": "EMPC_LOOP/SU_DISO_SISO_DISO_120/code",
+    "caseRel": "EMPC_LOOP/SU_DISO_SISO_DISO_120",
+    "feedbackTiming": "sample_hold",
+    "Co": 0.00022,
+    "L": 0.00011,
+    "warmupTime": 0.25
+  },
+  {
+    "id": "DISO_SIDO_DISO",
+    "source": "EMPC_LOOP/SU_DISO_SIDO_DISO_120/circuit/template/change_DISO_SIDO_DISO.slx",
+    "Vref": 120,
+    "events": [
+      0.05,
+      0.07
+    ],
+    "paperFigure": 11,
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SIDO_DISO_120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SIDO_DISO_120\\code",
+    "Rload": 48,
+    "Ts": 1e-05,
+    "mapping": [
+      {
+        "pwm": "PWM Generator\n(DC-DC)",
+        "mode": "DISO",
+        "head": 1
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)2",
+        "mode": "DISO",
+        "head": 2
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)1",
+        "mode": "SIDO",
+        "head": 1
+      }
+    ],
+    "fixedDutyS1": 0.75,
+    "codeRel": "EMPC_LOOP/SU_DISO_SIDO_DISO_120/code",
+    "caseRel": "EMPC_LOOP/SU_DISO_SIDO_DISO_120",
+    "feedbackTiming": "sample_hold",
+    "Co": 0.00022,
+    "L": 0.00011,
+    "warmupTime": 0.25
+  },
+  {
+    "id": "SISO_SIDO_SISO_EXTRA",
+    "source": "EMPC_LOOP/SU_SISO_SIDO_SISO_120/circuit/template/change_SISO_SIDO_SISO.slx",
+    "Vref": 120,
+    "events": [
+      0.05,
+      0.07
+    ],
+    "paperFigure": 0,
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_SIDO_SISO_120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_SIDO_SISO_120\\code",
+    "Rload": 48,
+    "Ts": 1e-05,
+    "mapping": [
+      {
+        "pwm": "PWM Generator\n(DC-DC)1",
+        "mode": "SISO_VS_VO",
+        "head": 1
+      },
+      {
+        "pwm": "PWM Generator\n(DC-DC)2",
+        "mode": "SIDO",
+        "head": 1
+      }
+    ],
+    "fixedDutyS1": 0.75,
+    "codeRel": "EMPC_LOOP/SU_SISO_SIDO_SISO_120/code",
+    "caseRel": "EMPC_LOOP/SU_SISO_SIDO_SISO_120",
+    "feedbackTiming": "sample_hold",
+    "Co": 0.00022,
+    "L": 0.00011,
+    "warmupTime": 0.25
+  }
+]

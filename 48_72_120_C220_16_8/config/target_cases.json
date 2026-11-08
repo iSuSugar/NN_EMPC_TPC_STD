@@ -1,0 +1,338 @@
+[
+  {
+    "id": "SISO_VS_VB",
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_VB72\\code",
+    "source": "EMPC_LOOP/SU_SISO_VS48_VB72/circuit/template/SISO_VS48_VB72.slx",
+    "Vref": 72,
+    "Vs": 48,
+    "Vb": 72,
+    "Rloads": [
+      20,
+      40
+    ],
+    "refs": 72,
+    "Ts": 1e-05,
+    "fsw": 100000,
+    "N": 30,
+    "blockTo": 1,
+    "Qx": 3,
+    "Qy": 3000,
+    "currentMax": 18,
+    "activePwm": [
+      "PWM Generator\n(DC-DC)1"
+    ],
+    "voltageSensor": "Voltage Measurement1",
+    "currentSensor": "Current Measurement3",
+    "nominalDuty": 0.35,
+    "dutyMax": 0.94,
+    "calibrateRange": [
+      0,
+      0.7
+    ],
+    "nu": 1,
+    "events": [
+      0.03,
+      0.04
+    ],
+    "paperFigure": 4,
+    "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+    "hiddenSizes": [
+      16,
+      8
+    ],
+    "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+    "warmupTime": 0.25,
+    "segmentTime": 0.01,
+    "codeRel": "EMPC_LOOP/SU_SISO_VS48_VB72/code",
+    "caseRel": "EMPC_LOOP/SU_SISO_VS48_VB72",
+    "L": 0.00011,
+    "Co": 0.00022,
+    "openMaxStep": 5e-07,
+    "feedbackTiming": "sample_hold",
+    "currentMin": -0.02,
+    "voltageMin": -0.01,
+    "QxByRload": [
+      3,
+      0.03
+    ],
+    "groupLoadFamilies": true,
+    "nnVoltageDomain": [
+      67,
+      77
+    ],
+    "nnCurrentDomain": [
+      -0.02,
+      18
+    ]
+  },
+  {
+    "id": "SISO_VS_VO",
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VS48_Vo120\\code",
+    "source": "EMPC_LOOP/SU_SISO_VS48_Vo120/circuit/template/SISO_VS48_Vo200.slx",
+    "Vref": 120,
+    "Vs": 48,
+    "Vb": 72,
+    "Rloads": [
+      48,
+      96
+    ],
+    "refs": 120,
+    "Ts": 1e-05,
+    "fsw": 100000,
+    "N": 30,
+    "blockTo": 1,
+    "Qx": 0.03,
+    "Qy": 3000,
+    "currentMax": 18,
+    "activePwm": [
+      "PWM Generator\n(DC-DC)1"
+    ],
+    "voltageSensor": "Voltage Measurement",
+    "currentSensor": "Current Measurement3",
+    "nominalDuty": 0.725,
+    "dutyMax": 0.94,
+    "calibrateRange": [
+      0.05,
+      0.9
+    ],
+    "nu": 1,
+    "events": [
+      0.06,
+      0.07
+    ],
+    "paperFigure": 5,
+    "implementation": "Candidate only: 470uF, measured-anchor affine model, N30 Qx0.03; first exports are fixed 120V. Startup is separately declared and verified.",
+    "hiddenSizes": [
+      16,
+      8
+    ],
+    "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+    "warmupTime": 0.25,
+    "segmentTime": 0.01,
+    "codeRel": "EMPC_LOOP/SU_SISO_VS48_Vo120/code",
+    "caseRel": "EMPC_LOOP/SU_SISO_VS48_Vo120",
+    "L": 0.00011,
+    "Co": 0.00022,
+    "openMaxStep": 5e-07,
+    "feedbackTiming": "sample_hold",
+    "currentMin": -0.02,
+    "voltageMin": -0.01,
+    "groupLoadFamilies": true,
+    "nnVoltageDomain": [
+      115,
+      125
+    ],
+    "nnCurrentDomain": [
+      0,
+      18
+    ]
+  },
+  {
+    "id": "SISO_VB_VO",
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SISO_VB72_Vo120\\code",
+    "source": "EMPC_LOOP/SU_SISO_VB72_Vo120/circuit/template/SISO_VB72V_Vo200V.slx",
+    "Vref": 120,
+    "Vs": 48,
+    "Vb": 72,
+    "Rloads": [
+      48,
+      96
+    ],
+    "refs": 120,
+    "Ts": 1e-05,
+    "fsw": 100000,
+    "N": 30,
+    "blockTo": 1,
+    "Qx": 0.3,
+    "Qy": 8000,
+    "currentMax": 18,
+    "activePwm": [
+      "PWM Generator\n(DC-DC)3"
+    ],
+    "voltageSensor": "Voltage Measurement",
+    "currentSensor": "Current Measurement3",
+    "nominalDuty": 0.41,
+    "dutyMax": 0.94,
+    "calibrateRange": [
+      0,
+      0.7
+    ],
+    "nu": 1,
+    "events": [
+      0.12,
+      0.14
+    ],
+    "paperFigure": 6,
+    "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+    "hiddenSizes": [
+      16,
+      8
+    ],
+    "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+    "warmupTime": 0.25,
+    "segmentTime": 0.01,
+    "codeRel": "EMPC_LOOP/SU_SISO_VB72_Vo120/code",
+    "caseRel": "EMPC_LOOP/SU_SISO_VB72_Vo120",
+    "L": 0.00011,
+    "Co": 0.00022,
+    "openMaxStep": 5e-07,
+    "feedbackTiming": "sample_hold",
+    "currentMin": -0.02,
+    "voltageMin": -0.01,
+    "groupLoadFamilies": true,
+    "nnVoltageDomain": [
+      115,
+      125
+    ],
+    "nnCurrentDomain": [
+      -0.02,
+      18
+    ]
+  },
+  {
+    "id": "SIDO",
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_SIDO_VS48_VB72_Vo120\\code",
+    "source": "EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120/circuit/template/SIDO_VS_VBVo.slx",
+    "Vref": 120,
+    "Vs": 48,
+    "Vb": 72,
+    "Rloads": [
+      48,
+      96
+    ],
+    "refs": 120,
+    "Ts": 1e-05,
+    "fsw": 100000,
+    "N": 20,
+    "blockTo": 5,
+    "Qx": 3,
+    "Qy": 8000,
+    "currentMax": 18,
+    "activePwm": [
+      "PWM Generator\n(DC-DC)1"
+    ],
+    "voltageSensor": "Voltage Measurement",
+    "currentSensor": "Current Measurement3",
+    "nominalDuty": 0.677,
+    "dutyMax": 0.749,
+    "calibrateRange": [
+      0.05,
+      0.9
+    ],
+    "nu": 1,
+    "events": [
+      0.02,
+      0.025
+    ],
+    "paperFigure": 7,
+    "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+    "hiddenSizes": [
+      16,
+      8
+    ],
+    "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+    "warmupTime": 0.25,
+    "segmentTime": 0.01,
+    "codeRel": "EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120/code",
+    "caseRel": "EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120",
+    "L": 0.00011,
+    "Co": 0.00022,
+    "fixedDutyS1": 0.75,
+    "fixedPwm": "PWM Generator\n(DC-DC)2",
+    "openMaxStep": 5e-07,
+    "feedbackTiming": "sample_hold",
+    "currentMin": -0.02,
+    "voltageMin": -0.01,
+    "groupLoadFamilies": true,
+    "nnVoltageDomain": [
+      115,
+      125
+    ],
+    "nnCurrentDomain": [
+      -0.02,
+      18
+    ]
+  },
+  {
+    "id": "DISO",
+    "caseDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120",
+    "codeDir": "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code",
+    "source": "EMPC_LOOP/SU_DISO_VS48_VB72_Vo120/circuit/template/DISO_VS270W_VB30W.slx",
+    "Vref": 120,
+    "Vs": 48,
+    "Vb": 72,
+    "Rloads": [
+      48,
+      96
+    ],
+    "refs": 120,
+    "Ts": 1e-05,
+    "fsw": 100000,
+    "N": 20,
+    "blockTo": 1,
+    "Qx": 0.03,
+    "Qy": 5000,
+    "currentMax": 18,
+    "activePwm": [
+      "PWM Generator\n(DC-DC)",
+      "PWM Generator\n(DC-DC)2"
+    ],
+    "voltageSensor": "Voltage Measurement",
+    "currentSensor": "Current Measurement3",
+    "nominalDuty": [
+      0.362,
+      0.205
+    ],
+    "dutyMax": [
+      0.42,
+      0.27
+    ],
+    "calibrateRange": [
+      0.2,
+      1.35
+    ],
+    "nu": 2,
+    "events": [
+      0.05,
+      0.06
+    ],
+    "paperFigure": 8,
+    "implementation": "Isolated local candidate: reidentified PRBS affine model, declared Co/N/Qx/block settings; fixed reference only; startup separately controlled and verified.",
+    "hiddenSizes": [
+      16,
+      8
+    ],
+    "identificationVersion": "fast_PRBS_measured_deviation_affine_v1",
+    "warmupTime": 0.25,
+    "segmentTime": 0.01,
+    "codeRel": "EMPC_LOOP/SU_DISO_VS48_VB72_Vo120/code",
+    "caseRel": "EMPC_LOOP/SU_DISO_VS48_VB72_Vo120",
+    "L": 0.00011,
+    "Co": 0.00022,
+    "openMaxStep": 5e-07,
+    "dutyMin": [
+      0.335,
+      0.179
+    ],
+    "feedbackTiming": "sample_hold",
+    "currentMin": -0.02,
+    "voltageMin": -0.01,
+    "explicitInitialVoltageDomain": [
+      115,
+      125
+    ],
+    "groupLoadFamilies": true,
+    "nnVoltageDomain": [
+      115,
+      125
+    ],
+    "nnCurrentDomain": [
+      -0.02,
+      18
+    ]
+  }
+]

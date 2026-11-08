@@ -1,0 +1,30 @@
+{
+  "stop": "maximum_updates",
+  "updates": 50000,
+  "bestUpdate": 48500,
+  "trainingMSE": 8.065064719681259E-5,
+  "goal": 1E-8,
+  "test": {
+    "count": 19803,
+    "RMSE": 0.0090539284064377942,
+    "MAE": 0.0062104941750484718,
+    "maxAbs": 0.062173504193467566,
+    "rawDutyMin": -0.053766297241295724,
+    "rawDutyMax": 0.99610583460716939
+  },
+  "freshOffgrid": {
+    "count": 6000,
+    "RMSE": 0.012670391438464018,
+    "MAE": 0.0084967741908554377,
+    "maxAbs": 0.076474463646919677,
+    "rawDutyMin": -0.06205716001717404,
+    "rawDutyMax": 1.0024809807283359
+  },
+  "inputCount": 4,
+  "hiddenCounts": [
+    16,
+    8
+  ],
+  "independentDutyOutputs": 1,
+  "lossWeighting": "Weight 5 for iL<=20A and |Vo-Vref|<=2V; all other samples retain weight 1. Test metrics are unweighted."
+}

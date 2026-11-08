@@ -1,0 +1,52 @@
+set_location_assignment PIN_L14 -to ad_os[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[1]
+set_location_assignment PIN_L15 -to ad_os[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[0]
+set_location_assignment PIN_K14 -to ad_convstab
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_convstab
+set_location_assignment PIN_J14 -to ad_os[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_os[2]
+set_location_assignment PIN_H15 -to ad_rd
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_rd
+set_location_assignment PIN_G15 -to ad_reset
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_reset
+set_location_assignment PIN_F16 -to ad_busy
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_busy
+set_location_assignment PIN_F17 -to ad_cs
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_cs
+set_location_assignment PIN_E17 -to first_data
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to first_data
+set_location_assignment PIN_D18 -to NC
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to NC
+set_location_assignment PIN_B19 -to ad_data[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[0]
+set_location_assignment PIN_A20 -to ad_data[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[1]
+set_location_assignment PIN_C20 -to ad_data[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[2]
+set_location_assignment PIN_B20 -to ad_data[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[3]
+set_location_assignment PIN_D19 -to ad_data[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[4]
+set_location_assignment PIN_D20 -to ad_data[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[5]
+set_location_assignment PIN_E18 -to ad_data[6]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[6]
+set_location_assignment PIN_E19 -to ad_data[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[7]
+set_location_assignment PIN_F19 -to ad_data[8]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[8]
+set_location_assignment PIN_F20 -to ad_data[9]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[9]
+set_location_assignment PIN_G19 -to ad_data[10]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[10]
+set_location_assignment PIN_G20 -to ad_data[11]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[11]
+set_location_assignment PIN_J18 -to ad_data[12]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[12]
+set_location_assignment PIN_H18 -to ad_data[13]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[13]
+set_location_assignment PIN_J20 -to ad_data[14]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[14]
+set_location_assignment PIN_H20 -to ad_data[15]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to ad_data[15]

@@ -1,0 +1,84 @@
+[
+  {
+    "name": "01_identification",
+    "files": [
+      "01_identification.fig",
+      "01_identification.png",
+      "01_identification.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\models\\identified_model.mat",
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\data\\prbs\\raw_R48.mat",
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\data\\prbs\\raw_R96.mat"
+    ]
+  },
+  {
+    "name": "03_empc_control_law",
+    "files": [
+      "03_empc_control_law.fig",
+      "03_empc_control_law.png",
+      "03_empc_control_law.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\models\\EMPC_48_72_120.mat",
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\generated\\empc_DISO_R48_V120_T10us.mat",
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\generated\\empc_DISO_R96_V120_T10us.mat"
+    ]
+  },
+  {
+    "name": "05_neural_fit",
+    "files": [
+      "05_neural_fit.fig",
+      "05_neural_fit.png",
+      "05_neural_fit.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\models\\net_48_72_120.mat",
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\data\\offgrid_holdout.mat"
+    ]
+  },
+  {
+    "name": "07_closed_loop",
+    "files": [
+      "07_closed_loop.fig",
+      "07_closed_loop.png",
+      "07_closed_loop.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\results\\switching_dynamic.mat"
+    ]
+  },
+  {
+    "name": "08_event_enlargements",
+    "files": [
+      "08_event_enlargements.fig",
+      "08_event_enlargements.png",
+      "08_event_enlargements.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\results\\switching_dynamic.mat"
+    ]
+  },
+  {
+    "name": "09_steady_ripple",
+    "files": [
+      "09_steady_ripple.fig",
+      "09_steady_ripple.png",
+      "09_steady_ripple.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\results\\switching_dynamic.mat"
+    ]
+  },
+  {
+    "name": "10_trajectory_teacher_comparison",
+    "files": [
+      "10_trajectory_teacher_comparison.fig",
+      "10_trajectory_teacher_comparison.png",
+      "10_trajectory_teacher_comparison.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_VS48_VB72_Vo120\\code\\results\\NN_native_trajectory.mat"
+    ]
+  }
+]

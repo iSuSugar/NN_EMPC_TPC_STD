@@ -1,0 +1,35 @@
+[
+  {
+    "name": "07_closed_loop",
+    "files": [
+      "07_closed_loop.fig",
+      "07_closed_loop.png",
+      "07_closed_loop.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SIDO_DISO_120\\code\\results\\switching_dynamic.mat"
+    ]
+  },
+  {
+    "name": "08_event_enlargements",
+    "files": [
+      "08_event_enlargements.fig",
+      "08_event_enlargements.png",
+      "08_event_enlargements.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SIDO_DISO_120\\code\\results\\switching_dynamic.mat"
+    ]
+  },
+  {
+    "name": "09_steady_ripple",
+    "files": [
+      "09_steady_ripple.fig",
+      "09_steady_ripple.png",
+      "09_steady_ripple.pdf"
+    ],
+    "evidence": [
+      "D:\\Project\\NN_EMPC_TPC\\48_72_120_C220_16_8\\EMPC_LOOP\\SU_DISO_SIDO_DISO_120\\code\\results\\switching_dynamic.mat"
+    ]
+  }
+]
