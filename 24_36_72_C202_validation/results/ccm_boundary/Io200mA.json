@@ -1,0 +1,13 @@
+{
+  "setLoadCurrent": 0.2,
+  "actualLoadCurrent": 0.20033869949167415,
+  "meanVoltage": 67.788671061631362,
+  "meanCurrent": 0.91514688015940138,
+  "rmsCurrent": 1.0204137634504504,
+  "minimumCurrent": 0.12964452613775798,
+  "maximumCurrent": 1.6975250049802131,
+  "meanCycleRipple": 1.5585813039016512,
+  "fractionCCMcyclesAbove20mA": 1,
+  "fractionNearZero": 0,
+  "note": "Fixed duty0.7522, not72V regulation; final voltage may drift at light load."
+}

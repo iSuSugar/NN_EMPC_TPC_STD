@@ -1,0 +1,14 @@
+{
+  "source": "TPC低压开环测试 _24_36_72.pptx",
+  "sourceDate": "2026-11-13",
+  "confirmedByUser": {"Vs_V": 24, "Vb_V": 36, "Vref_V": 72, "L_H": 0.00011, "CoNominal_F": 0.00022, "CoMeasured_F": 0.000202},
+  "loads_A": [0.5, 1.0],
+  "cases": [
+    {"id": "SISO_VS_VO", "slide": 4, "dutyCommand": [0.725], "dutyVgsProxy": [0.7522], "VoMeasured_V": [71.948, 68.565], "scopeCurrentPp_A": [7.8, 7.7], "scopeCurrentMean_A": [-8.44, 0.17134]},
+    {"id": "SISO_VB_VO", "slide": 5, "dutyCommand": [0.410], "dutyVgsProxy": [0.437], "VoMeasured_V": [64.785, 64.083], "note": "Slide2 input says24V, slide5 saysVb36V; model uses36V. Slide5 Q2/Q3 columns conflict with established gate map; model retains Q2=1,Q3=PWM, not an unverified rewiring."},
+    {"id": "SISO_VS_VB", "slide": 6, "dutyCommand": [0.350], "dutyVgsProxy": [0.350], "VoMeasured_V": [37.383, 35.615], "note": "Comparison uses controlled battery-port voltage, not the separate 14.798/12.832V output measurement."},
+    {"id": "SIDO", "slide": 7, "dutyCommand": [0.691], "dutyVgsProxy": [0.716], "fixedDutyCommand": 0.750, "fixedDutyVgsProxy": 0.777, "VoMeasured_V": [75.225, 66.143], "note": "The meaning of slash currents1.07A/2.34A is unresolved; they are not used as inductor or output current ground truth."},
+    {"id": "DISO", "slide": 8, "dutyCommand": [0.361, 0.204], "dutyVgsProxy": [0.388, 0.231], "VoMeasured_V": [78.045, 69.960], "scopeCurrentPp_A": [4.2, 4.8], "scopeCurrentMean_A": [-3.71, 2.64], "note": "DISO second command remains second-half local PWM; Q2 combined gate is not a third independent duty."}
+  ],
+  "scopeCaution": "Current screenshots are not calibrated raw traces; displayed extrema/means include possible offset, polarity, probe-factor and transient effects. No direct current acceptance from screenshots."
+}

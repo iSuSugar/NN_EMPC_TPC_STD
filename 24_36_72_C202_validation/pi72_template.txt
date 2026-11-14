@@ -1,0 +1,14 @@
+function u=control(features,t)
+%#codegen
+@PARAMETERS@
+persistent zi zv
+if isempty(zi),zi=-.75;zv=0;end
+ref=72*min(t/.02,1);
+ev=ref-features(2);
+ir0=kpV*ev+zv;ir=min(max(ir0,0),6);
+ei=ir-features(1);raw=.75+kpI*ei+zi;
+cmd=min(max(raw,0),.85);u=min(cmd+delta,.95);
+zi=zi+kiI*Ts*ei+.2*(cmd-raw);
+blocked=(ir0>6&&ev>0)||(ir0<0&&ev<0)||(cmd<raw-1e-12&&ev>0)||(cmd>raw+1e-12&&ev<0);
+if ~blocked,zv=zv+kiV*Ts*ev;end
+end

@@ -48,3 +48,5 @@ vivado.jou
 /pi_comparison/STOP_WORKER
 /pi_comparison/pi_worker.m
 /pi_comparison/cache/
+/24_36_72_C202_validation/worker24.m
+/24_36_72_C202_validation/cases/*/circuit/TPC_*.slx

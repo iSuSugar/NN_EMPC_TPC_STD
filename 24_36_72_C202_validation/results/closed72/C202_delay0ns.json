@@ -1,0 +1,82 @@
+{
+  "case": "C202_delay0ns",
+  "Vs": 24,
+  "Vref": 72,
+  "L": 0.00011,
+  "C": 0.000202,
+  "plateaus": [
+    {
+      "window": [
+        0.055,
+        0.059
+      ],
+      "meanVoltage": 71.990230310329963,
+      "relativeErrorPct": 0.013569013430603238,
+      "meanCurrent": 2.2434553205823606,
+      "rmsCurrent": 2.2888871449539461,
+      "peakCurrent": 3.018257017243235,
+      "minCurrent": 1.457020998908775,
+      "meanCycleRipple": 1.5612360128158327,
+      "fractionCyclesAbove20mA": 1,
+      "actualLoadCurrent": 0.50035969217320275
+    },
+    {
+      "window": [
+        0.075,
+        0.079
+      ],
+      "meanVoltage": 71.98066557035844,
+      "relativeErrorPct": 0.026853374502167071,
+      "meanCurrent": 4.4367349323557059,
+      "rmsCurrent": 4.4592051795561032,
+      "peakCurrent": 5.2006950077241765,
+      "minCurrent": 3.661963631448204,
+      "meanCycleRipple": 1.538713611978767,
+      "fractionCyclesAbove20mA": 1,
+      "actualLoadCurrent": 1.0003596443838954
+    },
+    {
+      "window": [
+        0.085,
+        0.089
+      ],
+      "meanVoltage": 71.9777987993047,
+      "relativeErrorPct": 0.03083500096570102,
+      "meanCurrent": 2.2522984570486089,
+      "rmsCurrent": 2.2975521044376443,
+      "peakCurrent": 3.0356014191554381,
+      "minCurrent": 1.4568777017658094,
+      "meanCycleRipple": 1.5610619036995681,
+      "fractionCyclesAbove20mA": 1,
+      "actualLoadCurrent": 0.50035963006035433
+    }
+  ],
+  "events": [
+    {
+      "time": 0.06,
+      "peakDepartureV": 1.001253875249219,
+      "settleWithin1PctUs": 1825.0000000000073
+    },
+    {
+      "time": 0.08,
+      "peakDepartureV": 1.0075509131253426,
+      "settleWithin1PctUs": 1774.9999999999989
+    }
+  ],
+  "startupPeakCurrent": 6.22091270328849,
+  "elapsedSeconds": 13.5814642,
+  "controller": {
+    "KpI": 0.013186771353228984,
+    "KiI": 76.410237497459931,
+    "KpV": 1.4259553718775031,
+    "KiV": 1138.3803980183391,
+    "Ts": 1E-5,
+    "reference": 72,
+    "dutyMax": 0.85,
+    "currentRefMax": 6,
+    "innerPhaseMargin": 64.999999999999972,
+    "outerPhaseMargin": 65.000000000000284,
+    "assumedWindingResistance": 0.1,
+    "dutyExtension": 0
+  }
+}

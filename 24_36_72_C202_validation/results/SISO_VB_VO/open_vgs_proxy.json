@@ -1,0 +1,59 @@
+{
+  "id": "SISO_VB_VO",
+  "Vs": 24,
+  "Vb": 36,
+  "L": 0.00011,
+  "C": 0.000202,
+  "duty": 0.437,
+  "plateaus": [
+    {
+      "window": [
+        0.055,
+        0.059
+      ],
+      "meanVoltage": 62.893420592411466,
+      "meanCurrent": 0.94633329167444313,
+      "rmsCurrent": 1.0315999381443737,
+      "peakCurrent": 1.6534444044338314,
+      "minCurrent": 0.23146651398820706,
+      "meanCycleRipple": 1.4147740521657726,
+      "fractionCyclesAbove20mA": 1,
+      "fractionSamplesNearZero": 0,
+      "actualLoadCurrent": 0.50031424084954956
+    },
+    {
+      "window": [
+        0.075,
+        0.079
+      ],
+      "meanVoltage": 62.666253955716037,
+      "meanCurrent": 1.8338793151369071,
+      "rmsCurrent": 1.8788551915095613,
+      "peakCurrent": 2.5339489302877283,
+      "minCurrent": 1.1261191201557976,
+      "meanCycleRipple": 1.4077657757927551,
+      "fractionCyclesAbove20mA": 1,
+      "fractionSamplesNearZero": 0,
+      "actualLoadCurrent": 1.000313105833579
+    },
+    {
+      "window": [
+        0.085,
+        0.089
+      ],
+      "meanVoltage": 62.89311203441892,
+      "meanCurrent": 0.94702034482449637,
+      "rmsCurrent": 1.0322339318479083,
+      "peakCurrent": 1.6611802308868704,
+      "minCurrent": 0.22819280086565025,
+      "meanCycleRipple": 1.4147073350516539,
+      "fractionCyclesAbove20mA": 1,
+      "fractionSamplesNearZero": 0,
+      "actualLoadCurrent": 0.50031423930787045
+    }
+  ],
+  "startupPeak": 43.117687308356473,
+  "note": "Vgs proxy is a sensitivity case, not a validated effective MOS on-time. CC compliance model uses 5V; real electronic load dynamics and driver ringing are not modeled.",
+  "elapsedSeconds": 18.063441,
+  "variant": "vgs_proxy"
+}

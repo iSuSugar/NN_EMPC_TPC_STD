@@ -1,0 +1,138 @@
+{
+  "open": [
+    {
+      "mode": "SISO_VS_VO",
+      "dutyCase": "command",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SISO_VS_VO",
+      "dutyCase": "vgs_proxy",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SISO_VB_VO",
+      "dutyCase": "command",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SISO_VB_VO",
+      "dutyCase": "vgs_proxy",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SISO_VS_VB",
+      "dutyCase": "command",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SISO_VS_VB",
+      "dutyCase": "vgs_proxy",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SIDO",
+      "dutyCase": "command",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "SIDO",
+      "dutyCase": "vgs_proxy",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "DISO",
+      "dutyCase": "command",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    },
+    {
+      "mode": "DISO",
+      "dutyCase": "vgs_proxy",
+      "L": 0.00011,
+      "Co": 0.000202,
+      "sourcesAndPWMVerified": true,
+      "CCmeasuredVerified": true,
+      "dutyTraceVerified": true,
+      "savedCircuitVerified": true
+    }
+  ],
+  "closed": [
+    {
+      "case": "C202_delay0ns",
+      "allPlateausWithin1Pct": true,
+      "steadyCCM": true,
+      "CCmeasuredVerified": true,
+      "Co": 0.000202
+    },
+    {
+      "case": "C202_delay270ns",
+      "allPlateausWithin1Pct": true,
+      "steadyCCM": true,
+      "CCmeasuredVerified": true,
+      "Co": 0.000202
+    },
+    {
+      "case": "C220_delay0ns",
+      "allPlateausWithin1Pct": true,
+      "steadyCCM": true,
+      "CCmeasuredVerified": true,
+      "Co": 0.00022
+    },
+    {
+      "case": "C220_delay270ns",
+      "allPlateausWithin1Pct": true,
+      "steadyCCM": true,
+      "CCmeasuredVerified": true,
+      "Co": 0.00022
+    }
+  ],
+  "lightLoadTransitionVerified": true,
+  "hardwareCurrentCalibrated": false,
+  "newNNTrained": false,
+  "note": "CCM results apply to declared steady windows. Existing device parasitics are inherited, not fitted to physical hardware."
+}

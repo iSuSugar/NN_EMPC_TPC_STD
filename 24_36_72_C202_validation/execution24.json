@@ -1,0 +1,23 @@
+{
+  "date": "2026-11-14",
+  "scope": "24V source,36V battery,72V output,110uH,202uF with220uF sensitivity",
+  "openSwitchingRuns": 10,
+  "closedSwitchingRuns": 4,
+  "lightLoadRuns": 3,
+  "simulatedNotMeasured": true,
+  "neuralTrainingRuns": 0,
+  "hardwareActions": 0,
+  "mainResult": "Independent PI simulation feasible; measured current calibration and model mismatch remain unresolved",
+  "networkHashesAtCompletion": {
+    "48_72_120_C220_16_8/EMPC_LOOP/SU_DISO_VS48_VB72_Vo120/code/models/net_48_72_120.mat": "c415a7a37b8dcadab0204a6091d1ebdf4cd31f2e8adebdf66dab1063e357c75c",
+    "48_72_120_C220_16_8/EMPC_LOOP/SU_SIDO_VS48_VB72_Vo120/code/models/net_48_72_120.mat": "8b4b07f23ad46fdefe0e3ebc8baa171bf69de8ab3579a3b75c5f9997acab60df",
+    "48_72_120_C220_16_8/EMPC_LOOP/SU_SISO_VB72_Vo120/code/models/net_48_72_120.mat": "a3f38d6804b277f50e0bd1f9d9ba0b80942b65896b1ffa394f27467a479dbc41",
+    "48_72_120_C220_16_8/EMPC_LOOP/SU_SISO_VS48_VB72/code/models/net_48_72_120.mat": "bad23854d073f84e2fb5f29c009516b939dbcb56fc1ece2af08994a22358dcbd",
+    "48_72_120_C220_16_8/EMPC_LOOP/SU_SISO_VS48_Vo120/code/models/net_48_72_120.mat": "34b61e360c8d2702e51ea322f93acd75f8076b18f2ac631742f35a76220ba5c7",
+    "12_18_32_C220_16_8/EMPC_LOOP/SU_DISO_VS12_VB18_Vo32/code/models/net_12_18_32.mat": "4ca113164ce48c9b3819edc3f1b119f6526e5d59e3fc50269f339770cfa234ab",
+    "12_18_32_C220_16_8/EMPC_LOOP/SU_SIDO_VS12_VB18_Vo32/code/models/net_12_18_32.mat": "7d2380222d3608970e53b35df546c22ce715295859556bb918b66aee9a57bd5e",
+    "12_18_32_C220_16_8/EMPC_LOOP/SU_SISO_VB18_Vo32/code/models/net_12_18_32.mat": "6537c09cfdc3bf82e64664aa14e8318055076e5aa678c1acd0c44ba555e76e09",
+    "12_18_32_C220_16_8/EMPC_LOOP/SU_SISO_VS12_VB18/code/models/net_12_18_32.mat": "ec6b414bec0492b816f75d38cee560eb000b8817b5dd4adca322b6d6ca2531aa",
+    "12_18_32_C220_16_8/EMPC_LOOP/SU_SISO_VS12_Vo32/code/models/net_12_18_32.mat": "4b9ed1cfc835ebcf4a6c5932f99535023277833b130a465e3a10d19249213d4b"
+  }
+}
